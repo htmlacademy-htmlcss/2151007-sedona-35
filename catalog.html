@@ -45,7 +45,8 @@
       </nav>
     </header>
 
-    <main class="main-inner">
+    <main class="main-container main-inner">
+      <div class="page-container">
       <section class="inner-header">
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
         <ul class="breadcrumbs">
@@ -59,7 +60,7 @@
           </li>
         </ul>
 
-        <h2 class="visually-hidden">Список жилья с фильтрами</h2>
+        <h2 class="visually-hidden" hidden>Список жилья с фильтрами</h2>
         <form class="catalog-filters" action="https://echo.htmlacademy.ru/" method="get">
 
           <fieldset class="catalog-filter-group">
@@ -110,19 +111,23 @@
             </ul>
           </fieldset>
         </form>
+        <div class="input-data">
           <input class="input input-blue" type="submit">Применить</input>
           <input class="input input-cancel" type="reset">Сбросить</input>
-        </form>
+        </div>
       </section>
 
-        <section>
+        <section class="catalog-hotels">
         <div class="sorting-container">
           <select class="select-control" aria-label="Сортировка">
             <h3 class="heading-results">Найдено гостиниц: 38</h3>
-          <option value="popular">Сначала дешевые</option>
-          <option value="popular">Сначала популярные</option>
-          <option value="popular">Сначала дорогие</option>
+          <div class="sort">
+            <option value="popular">Сначала дешевые</option>
+            <option value="popular">Сначала популярные</option>
+            <option value="popular">Сначала дорогие</option>
+          </div>
         </select>
+        <div class="filtr-button">
         <a href="#" class="button button-dark">
           <img src="images/icon table.svg" width="16" height="14">
           <span class="visually-hidden">Показать таблицу</span>
@@ -136,8 +141,9 @@
           <span class="visually-hidden">Показать список</span>
         </a>
       </div>
+      </div>
 
-
+      <div class="product-card-list">
         <article class="product-card">
           <a class="product-card-link" href="product.html">
             <img class="product-card-image" src="images/catalog/hotel-1.jpg" alt="Вид на ущелье и ночное звёздное небо" width="300" height="212">
@@ -186,6 +192,7 @@
           <img class="raiting" src="images/Stars2.svg" width="140" height="37">
           <a class="button-raiting" href="#">Рейтинг: 5,0</a>
         </article>
+      </div>
 
       <ul class="pagination">
         <li class="pagination-item">
@@ -209,8 +216,8 @@
       </ul>
     </section>
 
-    <section class="newsletter">
-      <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
+    <section class="newsletter-hostel">
+      <h2 class="newsletter-title newsletter-title-hostel">Подпишитесь на рассылку</h2>
       <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
       <form class="newsletterform" action="" method="post">
         <label for="newsletter-email">Email</label>
@@ -220,9 +227,11 @@
         </button>
       </form>
     </section>
+  </div>
   </main>
 
   <footer class="page-footer">
+    <div class="page-footer-container">
     <div class="social-media">
     <h2 class="visually-hidden">Социальные сети</h2>
     <ul class="social-media-list">
@@ -251,6 +260,7 @@
     <h2 class="visually-hidden">Ссылка на школу</h2>
     <img class="logo-html.academy" href="https://htmlacademy.ru/" src="images/logo HTML Academy.svg" width="115" height="33">
   </div>
+</div>
 </footer>
 
   </body>
