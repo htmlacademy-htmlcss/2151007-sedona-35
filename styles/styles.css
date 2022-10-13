@@ -182,7 +182,6 @@ text-align: center;
 width: 230px;
 }
 
-
 .advantages-title {
 font-size: 24px;
 line-height: 28px;
@@ -267,11 +266,23 @@ color: #000000;
   background-size: 100% auto;
 }
 
+.newsletter-hostel {
+  width: 684px;
+  padding: 96px 258px 104px;
+  text-align: center;
+  background-color: #FFFFFF;
+  background-size: 100% auto;
+}
+
 .newsletter-title {
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
   color: #FFFFFF;
+}
+
+.newsletter-title-hostel {
+  color: #000000;
 }
 
 .newsletter-description {
@@ -324,16 +335,52 @@ color: #000000;
   line-height: 78px;
 }
 
+.breadcrumbs {
+  width: 114px;
+}
+
 .breadcrumbs-link {
   font-size: 16px;
   font-weight: 400;
   line-height: 21px;
 }
 
+.input-data {
+  width: 191px;
+}
+
+.catalog-filters {
+  display: flex;
+}
+
+.catalog-filter-group {
+  width: 150px;
+  margin-right: 70px;
+}
+
 .catalog-filter-title {
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
+}
+
+.catalog-hotels {
+  display: flex;
+}
+
+.sort {
+ width: 292px;
+ margin-right: 70px;
+}
+
+.filtr-button {
+  width: 292px;
+  margin: 0;
+}
+
+.product-card {
+  width: 340px;
+  margin-right: 20px;
 }
 
 .product-card-link {
@@ -359,8 +406,6 @@ color: #000000;
   text-transform: capitalize;
   text-decoration: none;
 }
-
-
 
 .pagination-link {
   color: #ffffff;
