@@ -63,6 +63,7 @@
         <h2 class="visually-hidden" hidden>Список жилья с фильтрами</h2>
         <form class="catalog-filters" action="https://echo.htmlacademy.ru/" method="get">
 
+        <div class="catalog-filters-line">
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Инфраструктура</legend>
             <ul class="catalog-filter-list">
@@ -111,22 +112,23 @@
             </ul>
           </fieldset>
         </form>
-        <div class="input-data">
-          <input class="input input-blue" type="submit">Применить</input>
-          <input class="input input-cancel" type="reset">Сбросить</input>
-        </div>
+          <div class="input-data">
+            <input class="input input-blue" type="submit">Применить</input>
+            <input class="input input-cancel" type="reset">Сбросить</input>
+          </div>
+      </div>
       </section>
 
         <section class="catalog-hotels">
         <div class="sorting-container">
+          <h3 class="heading-results-text">Найдено гостиниц: 38</h3>
           <select class="select-control" aria-label="Сортировка">
-            <h3 class="heading-results">Найдено гостиниц: 38</h3>
-          <div class="sort">
-            <option value="popular">Сначала дешевые</option>
-            <option value="popular">Сначала популярные</option>
-            <option value="popular">Сначала дорогие</option>
-          </div>
-        </select>
+            <div class="sort">
+              <option value="popular">Сначала дешевые</option>
+              <option value="popular">Сначала популярные</option>
+              <option value="popular">Сначала дорогие</option>
+            </div>
+          </select>
         <div class="filtr-button">
         <a href="#" class="button button-dark">
           <img src="images/icon table.svg" width="16" height="14">
