@@ -31,8 +31,20 @@ body {
   background-color: #FFFFFF;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .main-container {
   flex-grow: 1;
+  padding: 0;
 }
 
 .button {
@@ -41,6 +53,7 @@ body {
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
+  text-decoration: none;
 }
 
 .button-search {
@@ -108,17 +121,29 @@ body {
 }
 
 .navigation-list {
+  display: flex;
+  flex-wrap: wrap;
   width: 507px;
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
 .navigation-user {
+  display: flex;
   max-width: 268px;
   margin-left: auto;
+  list-style-type: none;
+}
+
+.navigation-user .navigation-link {
+  min-width: 12px;
+  min-height: 22px;
 }
 
 .navigation-link {
+  display: block;
+  padding: 20px 16px;
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
@@ -127,6 +152,17 @@ body {
   background-color: #FFFFFF;
   text-decoration: none;
   text-transform: capitalize;
+}
+
+.navigation-link-button {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #756157;
+  text-decoration: none;
 }
 
 .main-introduction {
@@ -153,10 +189,21 @@ h2 {
   text-transform: uppercase;
 }
 
+.main-description {
+  margin: 0;
+  padding: 69px 274px 90px;
+}
+
 .main-description p {
   font-style: normal;
   font-size: 22px;
   line-height: 26px;
+  color: #333333;
+}
+
+.main-inner {
+  color: #333333;
+  background-color: #FFFFFF;
 }
 
 .page-container {
@@ -167,6 +214,7 @@ h2 {
 .welcome {
   display: block;
   margin: 0 auto;
+  padding: 51px 371px 82px;
 }
 
 .advantages {
@@ -176,10 +224,17 @@ h2 {
 }
 
 .advantages-item {
-margin: 0;
-padding: 0;
-text-align: center;
-width: 230px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 92px 85px 111px;
+  text-align: center;
+  width: 230px;
+}
+
+.advantages-item:nth-child(3) {
+  background-color: rgba(131, 179, 211, 0.12)
 }
 
 .advantages-title {
@@ -188,26 +243,23 @@ line-height: 28px;
 font-weight: 700;
 text-transform: uppercase;
 color: #000000;
+margin-top: 0;
+margin-bottom: 62px;
+width: 175px;
 }
 
 .advantages-description {
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
+  margin: 0;
+  width: 230px;
 }
 
 .advantages-item-blue {
   display: flex;
-  justify-content: space-between;
-  padding: 0 85px;
   background-color: #82B3D3;
   color: #FFFFFF;
-}
-
-.advantages-item-blue {
-  background-color: #82B3D3;
-  color: #FFFFFF;
-  width: 1200px;
 }
 
 .advantages-title-blue {
@@ -227,8 +279,15 @@ color: #000000;
 }
 
 .specifics-item {
+  margin: 0;
+  padding: 80px 85px 81px;
   width: 230;
 }
+
+.specifics-item:nth-child(2n+1) {
+  background-color: rgba(131, 179, 211, 0.12)
+}
+
 
 .specifics-title {
   color: #000000;
@@ -236,6 +295,14 @@ color: #000000;
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
+  margin-top: 30;
+  margin-bottom: 30;
+}
+
+.specifics-description {
+  text-align: center;
+  width: 230px;
+  margin: 0;
 }
 
 .searching {
@@ -249,12 +316,16 @@ color: #000000;
   font-weight: 700;
   line-height: 36px;
   color: #000000;
+  margin-top: 0;
+  margin-bottom: 20px;
 }
 
 .searching-description {
   font-size: 22px;
   font-weight: 400;
   line-height: 26px;
+  margin-top: 0;
+  margin-bottom: 54px;
 }
 
 .newsletter {
@@ -279,6 +350,8 @@ color: #000000;
   font-weight: 700;
   line-height: 36px;
   color: #FFFFFF;
+  margin-top: 0;
+  margin-bottom: 20px;
 }
 
 .newsletter-title-hostel {
@@ -290,6 +363,8 @@ color: #000000;
   font-weight: 400;
   line-height: 26px;
   color: #FFFFFF;
+  margin-top: 0;
+  margin-bottom: 54px;
 }
 
 .page-footer-container {
@@ -297,6 +372,7 @@ color: #000000;
   justify-content: space-between;
   width: 1060px;
   margin: 0 auto;
+  padding: 40px 70px 30px;
 }
 
 .social-media {
@@ -304,8 +380,18 @@ color: #000000;
   margin-right: 41px;
 }
 
-.contacts-phone {
-  width: 720px;
+.social-media-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.social-media-item {
+  width: 47px;
+  height: 40px;
+  margin: 0;
 }
 
 .link {
@@ -327,26 +413,54 @@ color: #000000;
   color: #FFFFFF;
   background-size: 100% auto;
   background-repeat: no-repeat;
+  padding: 35px 70px 70px;
 }
 
 .inner-header-title {
   font-size: 60px;
   font-weight: 700;
   line-height: 78px;
+  margin: 0;
+  padding: 8px;
 }
 
 .breadcrumbs {
-  width: 114px;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 .breadcrumbs-link {
   font-size: 16px;
   font-weight: 400;
   line-height: 21px;
+  margin-right: 28px;
+}
+
+.catalog-filters-line {
+  display: flex;
+  justify-content: space-between;
+  width: 1060px;
 }
 
 .input-data {
   width: 191px;
+}
+
+.index-columns {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  padding: 0;
+}
+
+.index-columns:first-child {
+  margin-top: 50px;
+}
+
+.index-columns:last-child {
+  margin-bottom: 0;
 }
 
 .catalog-filters {
@@ -366,6 +480,30 @@ color: #000000;
 
 .catalog-hotels {
   display: flex;
+  flex-direction: column;
+  margin: 0;
+  width: 1060px;
+}
+
+.sorting-container-header {
+  display: flex;
+  width: 1060px;
+}
+
+.sorting-container {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.heading-results-text {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+  padding-right: 200px;
+  margin: 0;
 }
 
 .sort {
@@ -376,10 +514,23 @@ color: #000000;
 .filtr-button {
   width: 292px;
   margin: 0;
+  padding-left: 70px;
+}
+
+.filtr-button button {
+  width: 16px;
+  height: 17px;
+}
+
+.product-card-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 .product-card {
   width: 340px;
+  padding: 20px;
   margin-right: 20px;
 }
 
@@ -407,7 +558,23 @@ color: #000000;
   text-decoration: none;
 }
 
+.pagination {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.pagination-item {
+  margin-right: 8px;
+}
+
 .pagination-link {
+  display: block;
+  box-sizing: border-box;
+  width: 60px;
+  height: 60px;
+  padding: 12px 24px;
   color: #ffffff;
   background-color: #82B3D3;
   text-decoration: none;
