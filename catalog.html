@@ -56,7 +56,7 @@
           <h1 class="inner-header-title">Гостиницы Седоны</h1>
           <ul class="breadcrumbs">
             <li class="breadcrumbs-item">
-              <svg class="breadcrumbs-house" width="13" height="13" aria-hidden="true" focusable="false" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg class="breadcrumbs-house" width="12" height="12" aria-hidden="true" focusable="false" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="m6.5.5-6 5.8v6.2h12V6.3L6.5.5Zm5 11h-10V6.7l5-4.8 5 4.8v4.8Z" fill="#fff"/><path d="M4.5 10.5h1V8h2v2.5h1V7h-4v3.5Z" fill="#fff"/>
               </svg>
               <a class="visually-hidden" href="index.html">Главная</a>
@@ -67,15 +67,15 @@
           </ul>
 
         <h2 class="visually-hidden" hidden>Список жилья с фильтрами</h2>
-        <form class="catalog-filters" action="https://echo.htmlacademy.ru/" method="get">
 
+        <form class="catalog-filters" action="https://echo.htmlacademy.ru/" method="get">
         <div class="catalog-filters-line">
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Инфраструктура:</legend>
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class=" visually-hidden control-input" type="checkbox" name="swimming-pool" checked>
+                  <input class="visually-hidden control-input" type="checkbox" name="swimming-pool" checked>
                   <span class="control-mark"></span>
                   <span class="control-label">Бассейн</span>
                 </label>
@@ -123,6 +123,7 @@
               </li>
             </ul>
           </fieldset>
+
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Стоимость, ₽: <span class="visually-hidden">Логотип рубля</span>
             </legend>
@@ -137,8 +138,12 @@
               </div>
               <div class="range-scale">
                 <div class="range-bar" style="left: 0; width: 226px">
-                  <button type="button" class="range-toggle toggle-min"></button>
-                  <button type="button" class="range-toggle toggle-max"></button>
+                  <button type="button" class="range-toggle toggle-min">
+                    <span class="visually-hidden">Изменить минимальную цену</span>
+                  </button>
+                  <button type="button" class="range-toggle toggle-max">
+                    <span class="visually-hidden">Изменить максимальную цену</span>
+                  </button>
                 </div>
               </div>
             </div>
@@ -146,13 +151,14 @@
         </form>
 
           <div class="input-data">
-            <input class="input" type="submit">Применить</input>
-            <input class="input-cancel" type="reset">Сбросить</input>
+            <input class="input" type="submit"></input>
+            <input class="input input-cancel" type="reset"></input>
           </div>
+        </div>
       </section>
 
       <section class="catalog-hotels">
-        <div class="catalog-column">
+        <div class="index-columns">
             <div class="sorting-container">
               <h3 class="heading-results-text">Найдено гостиниц: 38</h3>
               <div class="select sorting-type">
@@ -162,10 +168,9 @@
                   <option value="popular">Сначала дорогие</option>
                 </select>
               </div>
-            </div>
 
             <div class="card-grid">
-              <a href="#" class="card-grid-toggle-current">
+              <a href="#" class="card-grid-toggle card-grid-toggle-current">
                 <svg width="16" height="14" aria-hidden="true" focusable="false" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z" fill="#000"/>
                 </svg>
@@ -185,6 +190,7 @@
               </a>
             </div>
           </div>
+        </div>
 
         <div class="index-columns">
           <div class="product-card-list">
@@ -199,12 +205,18 @@
                 <p class="product-card-price">От 4000 ₽</p>
               </div>
               <div class="product-card-buttons">
-                <a class="product-card-button" href="#">Подробнее</a>
-                <button class="product-card-button button-disable" type="button">В избранное</button>
+                <a class="button product-card-button" href="#">Подробнее</a>
+                <button class="button product-card-button-add" type="button">В избранное</button>
               </div>
               <div class="product-card-raiting">
-                <span class="visually-hidden four-stars">Четыре звезды</span>
-                <a class="button-raiting" href="#">Рейтинг: 8,5</a>
+                <div class="product-card-stars">
+                  <span class="visually-hidden">Четыре звезды</span>
+                  <span class="product-card-one-star"></span>
+                  <span class="product-card-one-star"></span>
+                  <span class="product-card-one-star"></span>
+                  <span class="product-card-one-star"></span>
+                </div>
+                <span class="raiting-number">Рейтинг: 8,5</span>
               </div>
             </div>
             </article>
@@ -220,13 +232,18 @@
                   <p class="product-card-price">От 5000 ₽</p>
                 </div>
                 <div class="product-card-buttons">
-                  <a class="product-card-button" href="#">Подробнее</a>
-                  <button class="product-card-button button-active" type="button">В избранном</button>
+                  <a class="button product-card-button" href="#">Подробнее</a>
+                  <button class="button product-card-button-cheked" type="button">В избранном</button>
               </div>
               <div class="product-card-raiting">
-                <span class="visually-hidden">Четыре звезды</span>
-                <span class="four-stars"></span>
-                <a class="button-raiting" href="#">Рейтинг: 9,2</a>
+                <div class="product-card-stars">
+                  <span class="visually-hidden">Четыре звезды</span>
+                  <span class="product-card-one-star"></span>
+                  <span class="product-card-one-star"></span>
+                  <span class="product-card-one-star"></span>
+                  <span class="product-card-one-star"></span>
+                </div>
+                <span class="raiting-number">Рейтинг: 9,2</span>
               </div>
               </div>
           </article>
@@ -243,12 +260,17 @@
             <p class="product-card-price">От 2500 ₽</p>
           </div>
           <div class="product-card-buttons">
-            <a class="product-card-button" href="#">Подробнее</a>
-            <button class="product-card-button button-disable" type="button">В избранное</button>
+            <a class="button product-card-button" href="#">Подробнее</a>
+            <button class="button product-card-button-add" type="button">В избранное</button>
           </div>
           <div class="product-card-raiting">
-            <span class="visually-hidden three-stars">Три звезды</span>
-            <a class="button-raiting" href="#">Рейтинг: 6,9</a>
+            <div class="product-card-stars">
+              <span class="visually-hidden">Три звезды</span>
+              <span class="product-card-one-star"></span>
+              <span class="product-card-one-star"></span>
+              <span class="product-card-one-star"></span>
+            </div>
+            <span class="raiting-number">Рейтинг: 6,9</span>
           </div>
           </div>
         </article>
@@ -264,12 +286,16 @@
             <p class="product-card-price">От 1500 ₽</p>
           </div>
           <div class="product-card-buttons">
-            <a class="product-card-button" href="#">Подробнее</a>
-            <button class="product-card-button button-disable" type="button">В избранное</button>
+            <a class="button product-card-button" href="#">Подробнее</a>
+            <button class="button product-card-button-add" type="button">В избранное</button>
           </div>
           <div class="product-card-raiting">
-            <span class="visually-hidden two-stars">Две звезды</span>
-            <a class="button-raiting" href="#">Рейтинг: 5,0</a>
+            <div class="product-card-stars">
+              <span class="visually-hidden">Две звезды</span>
+              <span class="product-card-one-star"></span>
+              <span class="product-card-one-star"></span>
+            </div>
+            <span class="raiting-number">Рейтинг: 5,0</span>
           </div>
         </div>
         </article>
@@ -292,7 +318,7 @@
             <a class="pagination-link" href="#">4</a>
           </li>
           <li class="pagination-item">
-            <a>...</a>
+            <a class="pagination-dots">...</a>
           </li>
           <li class="pagination-item">
             <a class="pagination-link" href="#">10</a>
