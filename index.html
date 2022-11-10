@@ -116,10 +116,10 @@
 
       <section class="newsletter">
         <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
-        <p class="newsletter-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <p class="newsletter-description">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
         <form class="newsletterform" action="" method="post">
-          <label for="newsletter-email">Email</label>
-              <input class="field" placeholder="email@example.com" type="email" name="newsletter-email" id="newsletter-email" required>
+          <label for="newsletter-email"></label>
+              <input class="field" placeholder="email@example.com" type="email" name="newsletter-email" id="newsletter-email" value="Ваш e-mail" required>
               <button class="button newsletter-button" type="submit">
                 <span class="newsletter-name">Подписаться</span>
               </button>
@@ -172,6 +172,62 @@
       </div>
       </div>
     </footer>
+
+    <div class="modal-container modal-container-close">
+      <div class="modal-wrapper">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <form class="modal-field" action="https://echo.htmlacademy.ru/" method="post">
+            <div class="field-group">
+              <label class="field-group-label" for="auth-arrival">Дата заезда</label>
+              <input class="auth-form-field field" type="date" id="auth-arrival" name="auth-arrival" placeholder="Дата заезда" required>
+            </div>
+            <div class="field-group">
+              <label class="field-group-label" for="auth-departure">Дата выезда</label>
+              <input class="auth-form-field field" type="date" id="auth-departure" name="auth-departure" placeholder="Дата выезда" required>
+            </div>
+
+            <div class="field-group">
+              <label class="adults-count" for="adults-count-input">Взрослые:</label>
+              <div class="adults-count-wrapper">
+                <button class="minus-bth" type="button">
+                  <span class="visually-hidden">Уменьшить количество взрослых.</span>
+                </button>
+              <input class="adults-count-input modal-input" type="text" id="adults-count-input" name="adults-count" placeholder="2" autocomplete="off" required>
+              <button class="plus-bth" type="button">
+                <span class="visually-hidden">Увеличить количество взрослых.</span>
+              </button>
+              </div>
+            </div>
+
+            <div class="field-group">
+              <label class="children-count" for="children-count-input">Дети:</label>
+              <span class="tooltip">
+                <button class="tooltip-toggle" type="button">
+                  <svg class="tooltip-icon" aria-hidden="true" focusable="false" width="26" height="26" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><circle cx="13" cy="13" r="13">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7h2v2h-2V7Zm2 12h-2v-9h2v9Z" fill="#FFFFFF"/></svg>
+                </button>
+                <span class="tooltip-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+              </span>
+              <div class="children-count-wrapper">
+                <button class="minus-button" type="button">
+                  <span class="visually-hidden">Уменьшить количество детей.</span>
+                </button>
+              <input class="children-count-input modal-input" type="text" id="children-count-input" name="children-count" placeholder="2" autocomplete="off" required>
+              <button class="plus-button" type="button">
+                <span class="visually-hidden">Увеличить количество детей.</span>
+              </button>
+            </div>
+          </div>
+            <input class="modal-button" type="button" name="searching" value="Найти">
+          </form>
+        </section>
+      </div>
+    </div>
+
   </div>
   </body>
 </html>
