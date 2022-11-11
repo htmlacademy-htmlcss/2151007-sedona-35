@@ -125,7 +125,7 @@
         <p class="newsletter-description">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
         <form class="newsletterform" action="https://echo.htmlacademy.ru/" method="post">
           <label for="newsletter-email"></label>
-              <input class="field" placeholder="email@example.com" type="email" name="newsletter-email" id="newsletter-email" value="Ваш e-mail" required>
+              <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
               <button class="button newsletter-button" type="submit">
                 <span class="newsletter-name">Подписаться</span>
               </button>
@@ -188,22 +188,22 @@
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
           <form class="modal-field" action="https://echo.htmlacademy.ru/" method="post">
             <div class="field-group">
-              <label class="field-group-label" for="auth-arrival">Дата заезда</label>
-              <input class="auth-form-field field" type="text" id="auth-arrival" name="auth-arrival" placeholder="Дата заезда" required>
+              <label class="field-group-label" for="auth-arrival">Дата заезда:</label>
+              <input class="auth-form-field field" type="text" id="auth-arrival" name="auth-arrival" placeholder="Дата заезда" value="27 апреля 2020" required>
             </div>
             <div class="field-group">
-              <label class="field-group-label" for="auth-departure">Дата выезда</label>
-              <input class="auth-form-field field" type="text" id="auth-departure" name="auth-departure" placeholder="Дата выезда" required>
+              <label class="field-group-label" for="auth-departure">Дата выезда:</label>
+              <input class="auth-form-field field" type="text" id="auth-departure" name="auth-departure" placeholder="Дата выезда" value="1 сентября 2023" required>
             </div>
 
             <div class="field-group">
               <label class="adults-count" for="adults-count-input">Взрослые:</label>
               <div class="adults-count-wrapper">
-                <button class="minus-bth" type="button">
+                <button class="minus-button" type="button">
                   <span class="visually-hidden">Уменьшить количество взрослых.</span>
                 </button>
               <input class="adults-count-input modal-input" type="text" id="adults-count-input" name="adults-count" placeholder="2" autocomplete="off" required>
-              <button class="plus-bth" type="button">
+              <button class="plus-button" type="button">
                 <span class="visually-hidden">Увеличить количество взрослых.</span>
               </button>
               </div>
@@ -229,7 +229,7 @@
               </button>
             </div>
           </div>
-            <input class="modal-button" type="submit" name="searching" value="Найти">
+            <input class="modal-button" type="button" name="searching" value="Найти">
           </form>
         </section>
       </div>
