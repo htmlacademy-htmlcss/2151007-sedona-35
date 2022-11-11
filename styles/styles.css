@@ -797,9 +797,14 @@ width: 175px;
   display: none;
 }*/
 
-.modal-field {
+/*.modal-field {
   display: flex;
   flex-direction: column;
+}*/
+
+.modal-field {
+  display: grid;
+  grid-template-rows: repeat(5, auto);;
 }
 
 .modal-wrapper {
@@ -813,10 +818,33 @@ width: 175px;
 
 .field-group {
   display: grid;
-  grid-template-columns: 137px 110px 1fr 110px;
+  grid-template-columns: 137px 110px 88px 131px 111px;
   grid-template-rows: repeat(5, auto);
   align-items: center;
-  margin-bottom: 48px;
+  margin-bottom: 23px;
+}
+
+.children-count {
+  grid-column: 4 / 5;
+}
+
+.children-count-wrapper {
+  grid-column: 5 / 6;
+}
+
+.message {
+  grid-column: 2 / -1;
+  grid-row: -4;
+  margin: 0;
+  margin-top: 4px;
+  padding: 0 20px;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 400;
+}
+
+.error-message {
+  color: #FF5757;
 }
 
 .modal-close-button {
