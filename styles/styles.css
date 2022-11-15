@@ -424,7 +424,7 @@ body {
 
 h2 {
   font-family: "PT Sans";
-  font-style: bold;
+  font-style: normal;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
@@ -459,6 +459,7 @@ h2 {
   display: block;
   margin: 0 auto;
   padding: 51px 371px 82px;
+  background-color: #000000;
   background: url("../images/divider.png");
   background-repeat: no-repeat;
   background-position: bottom;
@@ -585,19 +586,31 @@ width: 175px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin: 0;
-  padding: 80px 85px 81px;
-  width: 230;
-  min-height: 223px;
+  padding: 182px 85px 81px;
 }
 
 .specifics-item:nth-child(2n+1) {
   background-color: rgba(131, 179, 211, 0.12)
 }
 
+.specifics-item-home {
+  background-image: url("../images/advantages/icon-home.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 80px;
+}
+
+.specifics-item-food {
+  background-image: url("../images/advantages/icon-food.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 80px;
+}
+
+.specifics-item-present {
+  background-image: url("../images/advantages/icon-gift.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 80px;
+}
 
 .specifics-title {
   color: #000000;
@@ -606,6 +619,7 @@ width: 175px;
   line-height: 28px;
   text-transform: uppercase;
   margin: 0;
+  padding-bottom: 30px;
   width: 230px;
 }
 
@@ -1380,7 +1394,7 @@ width: 175px;
   color: #FFFFFF;
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 35px 70px 70px;
+  padding: 35px 70px 69px;
 }
 
 .inner-header-title {
@@ -1484,10 +1498,6 @@ width: 175px;
   opacity: 60%;
 }
 
-.control:focus {
-  border: 3px solid #83B3D3;
-}
-
 .control:active {
   opacity: 30%;
 }
@@ -1502,6 +1512,10 @@ width: 175px;
   left: 4px;
   top: 6px;
   content: "";
+}
+
+.control-input:focus ~ .control-mark {
+  outline: 3px solid #83b3d3;
 }
 
 .control-mark {
@@ -1631,7 +1645,7 @@ width: 175px;
   color: #a9a9a9;
   background-color: transparent;
   left: 106px;
-  top: 10px;
+  top: 12px;
 }
 
 .range-wrapper-inputs::before {
@@ -1644,8 +1658,8 @@ width: 175px;
   line-height: 24px;
   color: #a9a9a9;
   background-color: transparent;
-  left: 246px;
-  top: 10px;
+  left: 248px;
+  top: 12px;
 }
 
 .range-wrapper-inputs {
@@ -1750,8 +1764,7 @@ range-input:active {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: column;
-      -ms-flex-pack: column;
-          justify-content: column;
+    -ms-flex-pack: column;
   margin-bottom: 40px;
   padding: 0;
 }
