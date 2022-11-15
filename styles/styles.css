@@ -29,7 +29,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   min-height: 100%;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
@@ -96,7 +96,7 @@ body {
 }
 
 .newsletter-button {
-  font-family: "PT Sans";
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   padding: 8px 50px;
   font-size: 20px;
@@ -157,7 +157,7 @@ body {
 }
 
 .product-card-button-add {
-  font-family: "PT Sans";
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -187,7 +187,7 @@ body {
 }
 
 .product-card-button-cheked {
-  font-family: "PT Sans";
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -217,7 +217,7 @@ body {
 
 .input {
   display: inline-block;
-  font-family: "PT Sans";
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-size: 16px;
   line-height: 20px;
@@ -422,20 +422,17 @@ body {
   padding: 69px 274px 90px 275px;
 }
 
-h2 {
-  font-family: "PT Sans";
-  font-style: normal;
-  font-size: 30px;
-  line-height: 36px;
-  text-transform: uppercase;
-}
-
 .main-description {
   margin: 0;
   padding: 69px 274px 90px;
 }
 
 .title-main-description {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
   margin: 0;
   margin-bottom: 25px;
 }
@@ -636,9 +633,12 @@ width: 175px;
 }
 
 .searching-title {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-style: normal;
   font-size: 30px;
-  font-weight: 700;
   line-height: 36px;
+  text-transform: uppercase;
+  font-weight: 700;
   color: #000000;
   margin-top: 0;
   margin-bottom: 20px;
@@ -677,9 +677,12 @@ width: 175px;
 }
 
 .newsletter-title {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-style: normal;
   font-size: 30px;
-  font-weight: 700;
   line-height: 36px;
+  text-transform: uppercase;
+  font-weight: 700;
   color: #FFFFFF;
   margin-top: 0;
   margin-bottom: 20px;
@@ -1132,7 +1135,7 @@ width: 175px;
   margin: 0;
   margin-bottom: 64px;
   margin-right: 164px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -1270,7 +1273,7 @@ width: 175px;
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   display: inline-block;
-  font-family: "PT Sans";
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-size: 20px;
   line-height: 24px;
@@ -1915,7 +1918,7 @@ range-input:active {
 }
 
 .popular {
-  font-family: "PT Sans";
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-size: 18px;
   font-weight: 400;
