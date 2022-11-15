@@ -97,18 +97,15 @@
       </section>
 
       <section class="specifics">
-          <article class="specifics-item">
-            <img class="specifics-image" src="images/advantages/icon-home.svg" alt="Дом с окошком дверью и трубой." width="75" height="72">
+          <article class="specifics-item specifics-item-home">
             <h3 class="specifics-title">Жильё</h3>
             <p class="specifics-description">Рекомендуем пожить<br>в настоящем мотеле,<br>всё как в кино!</p>
           </article>
-          <article class="specifics-item">
-            <img class="specifics-image" src="images/advantages/icon-food.svg" alt="Гамбургер." width="74" height="70">
+          <article class="specifics-item specifics-item-food">
             <h3 class="specifics-title">Еда</h3>
             <p class="specifics-description">Всегда заказывайте<br>топовый фирменный бургер,<br>вы не разочаруетесь!</p>
           </article>
-          <article class="specifics-item">
-            <img class="specifics-image" src="images/advantages/icon-gift.svg" alt="Подарочная коробка с бантом." width="64" height="76">
+          <article class="specifics-item specifics-item-present">
             <h3 class="specifics-title">Сувениры</h3>
             <p class="specifics-description">Не только китайского,<br>но и настоящего местного<br>производства!</p>
           </article>
@@ -215,8 +212,8 @@
               <label class="children-count" for="children-count-input">Дети:</label>
               <span class="tooltip">
                 <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-children">
-                  <svg class="tooltip-icon" aria-hidden="true" focusable="false" width="26" height="26" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7h2v2h-2V7Zm2 12h-2v-9h2v9Z">
+                  <svg class="tooltip-icon" aria-hidden="true" focusable="false" width="26" height="26" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7h2v2h-2V7Zm2 12h-2v-9h2v9Z"/>
                   </svg>
                 </button>
                 <span class="tooltip-text" role="tooltip" id="tooltip-label-children">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
@@ -231,7 +228,7 @@
               </button>
             </div>
           </div>
-            <input class="modal-button" type="button" name="searching" value="Найти">
+            <input class="modal-button" type="submit" name="searching" value="Найти">
           </form>
         </section>
       </div>
